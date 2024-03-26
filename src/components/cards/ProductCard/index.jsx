@@ -101,7 +101,7 @@ const ProductCard = ({ item }) => {
               <BagIcon color='text-white' size={'h-3.5 w-3.5'} />
               {isInCart ? 'Added to cart' : 'Add to cart'}
             </button>
-            <button className='flex-1 flex items-center py-2 px-3 gap-2 text-sm text-slate-800 rounded-full shadow-lg hover:bg-gray-100 bg-white'>
+            <button className='flex-1 flex items-center justify-center py-2 px-3 gap-2 text-sm text-slate-800 rounded-full shadow-lg hover:bg-gray-100 bg-white'>
               <QuickViewIcon color='text-slate-800' size={'h-3.5 w-3.5'} />
               Quick view
             </button>
