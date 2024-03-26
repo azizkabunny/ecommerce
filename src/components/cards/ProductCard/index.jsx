@@ -96,7 +96,7 @@ const ProductCard = ({ item }) => {
                   ? 'bg-green-600 hover:bg-green-500'
                   : 'bg-slate-800 hover:bg-slate-700'
               }
-                flex items-center flex-1 py-2 px-3 gap-2 text-sm text-white rounded-full`}
+                flex justify-center items-center flex-1 py-2 px-3 gap-2 text-sm text-white rounded-full`}
             >
               <BagIcon color='text-white' size={'h-3.5 w-3.5'} />
               {isInCart ? 'Added to cart' : 'Add to cart'}
