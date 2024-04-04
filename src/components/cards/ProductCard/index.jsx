@@ -11,7 +11,6 @@ import {
 } from '../../../redux/slices/wishlistSlice';
 
 import { addToCart } from '../../../redux/slices/cartSlice';
-import { removeFromCart } from '../../../redux/slices/cartSlice';
 
 const ProductCard = ({ item }) => {
   const isInWishlist = useSelector((state) =>

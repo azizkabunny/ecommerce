@@ -1,6 +1,10 @@
 import React from 'react';
+import { removeFromCart } from '../../../redux/slices/cartSlice';
+import { useDispatch } from 'react-redux';
 
 const ProductDropdownCart = ({ item }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className='flex'>
       <div className='bg-gray-100 rounded-xl w-[100px] h-full flex items-center py-10 justify-center'>
@@ -17,7 +21,14 @@ const ProductDropdownCart = ({ item }) => {
         <div className='text-green-500 text-sm font-semibold border-2 border-green-500 rounded-lg py-1 px-2'>
           ${item.price}
         </div>
-        <button className='text-blue-500 font-semibold'>Remove</button>
+        <button
+          onClick={() => {
+            dispatch(removeFromCart({ id: item.id }));
+          }}
+          className='text-blue-500 font-semibold'
+        >
+          Remove
+        </button>
       </div>
     </div>
   );
